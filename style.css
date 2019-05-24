@@ -1,0 +1,268 @@
+@font-face {
+    font-family: 'Gotham Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Gotham Bold'), url('Gotham-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Gotham Black Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Gotham Black Regular'), url('Gotham-Black.woff') format('woff');
+}
+
+  .hero-image {
+    background-image: url("images/hero-image.png");
+    background-color: rgba(0, 0, 0, 0.85);
+    image-rendering: crisp-edges;
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;  
+  }
+
+  /**Hamburger Icon**/
+
+  .hamburger {
+      position: fixed;  
+  }
+
+  .nav div {
+      height: 4px;
+      margin: 1.5px 25px 0px 0px;
+      border-radius: 25px;
+      background-color: #fff;
+      align-self: flex-end; 
+      padding: 1.5px;      
+  }
+
+  .nav {
+      width: 25px;
+      height: 8px;
+      display: flex;
+      flex-direction: column;
+      float: right;
+      padding-right: 8px;
+      margin-top: -11px;
+  }
+
+  .one {
+      width: 80%;
+  }
+
+  .space1 {
+      padding: 1px;
+  }
+
+  .two {
+      width: 60%;  
+  }
+
+  .space2 {
+      padding: 1px;
+  }
+
+  .three {
+      width: 25px;
+      margin-top: .5px;
+      
+  }
+
+ /** **/
+
+body, html {
+    height: 110%;
+    margin: 0; 
+  }
+
+h1 {
+    font-size: 4.5vw;
+    font-family: 'Gotham Black Regular', Arial, sans-serif;
+    color: #fff;
+    padding: 0px 0px 0px 6px;
+    
+}
+
+.rex {  
+    position: fixed;
+    margin-top: -30px;
+    margin-left: 2%;
+}
+
+h3 {
+    color: #fff;
+    font-family: 'Gotham Bold', Arial, sans-serif;
+}
+
+#h3 {
+    padding-top: -200px;   
+}
+
+#h3one {
+    font-size: 3.3vw;
+    padding-top: 270px;
+    margin-left: 10%;
+}
+
+#h3two {
+    font-size: 3.3vw;
+    margin-top: -40px;
+    margin-left: 10%;
+}
+
+#explore {
+    font-size: 1.3vw;
+    margin-left: 10%;
+    color: #fff;
+    font-family: 'Gotham Bold', Arial, sans-serif;
+    margin-top: -12px;
+}
+
+.boxed h5 {
+    background-color: #7ACEAC;
+    width: 20px;
+    padding: 10px 0px 10px 15px;
+    transition: width .5s;
+    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.7);
+}
+
+.boxed h5:hover {
+    width: 100px;
+}
+
+
+/**Fullscreen Navigation Menu**/
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #F4F4F4;
+    background-color: #F4F4F4;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: black;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+  ul {
+      list-style-type: none;
+      margin-left: 0%;
+      margin-top: 14%;
+      padding: 0;
+      overflow: hidden;
+  }
+
+  li {
+      float: left;
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      list-style-type: none;
+      font-family: 'Gotham Bold';
+      padding-left: 7%;   
+  }
+
+  .list1 {
+      text-align: center;
+      display: block;
+      list-style-type: none;
+      text-decoration: none;
+      margin-left: 6%;
+  }
+
+  .list2 {
+    text-align: center;
+    display: block;
+    list-style-type: none;
+    text-decoration: none;
+    margin-left: 12%;
+  }
+
+  .list3 {
+    text-align: center;
+    display: block;
+    list-style-type: none;
+    text-decoration: none;
+    margin-left: 11%;
+  }
+
+  .list4 {
+    text-align: center;
+    display: block;
+    list-style-type: none;
+    text-decoration: none;
+    margin-left: 13%;
+  }
+
+  /** **/
+
+  /** Footer **/
+
+footer {
+    
+		
+}
+
+.roman-pagination {
+	margin-left: 9%;
+	margin-top: 15%;
+    font-family: 'Gotham Bold';
+}
+
+.roman-radio {
+    margin: 0 8px;
+    color: #fff;
+    font-size: .9vw;    
+}
+
+input[type="radio"] { display: none; }
+input[type="radio"]:checked ~ span { color: #fff; }
+input[type="radio"]:checked ~ .title { display: inline; margin-left: 0; }
+
+
+.title {
+	display: none;
+	margin-left: -16px;
+}
+
+/** Social Media Images **/
+.social-footer {
+    margin-right: 5%;
+    display: inline-block !important;
+    float: right !important;
+    position: relative !important;
+    padding: 1em;
+  }
+
